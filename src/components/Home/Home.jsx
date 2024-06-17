@@ -14,7 +14,7 @@ function Home() {
 
           <div className="flex flex-col justify-center items-center h-screen">
             <p className="md:text-lg text-base text-white font-bold">
-              World's Leading Industry Corporation
+              World's 
             </p>
             <h1 className="md:text-[5rem] text-[3rem] px-4 md:px-0 text-center font-bold text-white">
               One Industry All Solution

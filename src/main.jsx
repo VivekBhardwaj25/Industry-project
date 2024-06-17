@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import Layout from "./Layout.jsx";
+import Error from "./Error.jsx";
 import Home from "./components/Home/Home.jsx";
 import About from "./components/AboutUS/About.jsx";
 import Contacts from "./components/Contacts/Contact.jsx";
@@ -17,12 +18,13 @@ import {
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<Layout />}>
-      <Route path="" element={<Home />} />
-      <Route path="about" element={<About />} />
-      <Route path="product" element={<Product />} />
-      <Route path="projects" element={<Projects />} />
-      <Route path="contact" element={<Contacts />} />
+    <Route path ="" element={<Layout />}>
+      <Route path ="/" element={<Home />} />
+      <Route path ="/about" element={<About />} />
+      <Route path ="/product" element={<Product />} />
+      <Route path ="/projects" element={<Projects />} />
+      <Route path ="/contact" element={<Contacts />} />
+      <Route Component={Error}/>
     </Route>
   )
 );
